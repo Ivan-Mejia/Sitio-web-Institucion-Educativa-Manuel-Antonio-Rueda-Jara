@@ -1,0 +1,721 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: verdana;
+    background: #ffffff;
+}
+.contenedor{
+    padding:0px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(0, 47, 255);
+    font-size:30px ;
+    text-align:center;
+    margin-bottom: 60px;
+
+}
+header{
+    width: 100%;
+    left: 300px;
+    background-image: url('../Biologia/Imagenes/Fondo-Biologia_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+nav{
+    text-align:right;
+    padding: 30px 50px 0 0;
+    
+}
+
+nav > a{
+    color: aliceblue;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+}
+nav > a:hover{
+    text-decoration: underline;   
+}
+
+header .section-textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/*about us*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content:space-evenly ;
+    text-align: center;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+.contenido-sobre-nosotros .contenido-textos{
+    width: 48%;  
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos span{
+    background: #4d0684;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding: 2px;
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.menu {
+    list-style:none;
+    padding: 0;
+    width: 98%;
+    max-width: 96%;
+    margin:auto;
+    position: fixed;
+    
+} 
+
+.menu li a {
+    text-decoration: none;
+    color:rgb(52, 152, 55);
+    padding:20px;
+    display: block;
+}
+.menu li{
+    display:inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: #ACEF35;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 2;
+    color: black;
+    display: none;
+    width: 50px;
+    height: 100px;
+  }
+/*submenu*/
+
+.submenu-tematicas{
+    position: absolute;
+    background: #ACEF35;
+    width: 32%;
+    visibility: hidden;
+    opacity: 0;
+    transition:1.5s;
+  
+}
+.submenu-tematicas li {
+    background: #fff;
+    margin: 1px;
+    width: 97%;
+}
+
+.submenu-tematicas li a{
+    position: relative;
+    display: block;
+    padding: 15px;
+    color: rgb(52, 152, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu-tematicas{
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu-asignaturas{
+    position: absolute;
+    background: #ACEF35;
+    width: 32%;
+    visibility: hidden;
+    opacity: 0;
+    transition:1.5s;
+  
+}
+.submenu-asignaturas li {
+    background: #fff;
+    margin: 1px;
+    width: 97%;
+}
+
+.submenu-asignaturas li a{
+    position: relative;
+    display: block;
+    padding: 15px;
+    color: rgb(52, 152, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu-asignaturas{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wave{
+    position: static;
+    bottom: 0;
+    width:150%;
+    max-width: 100%;
+    height: 150px;
+    
+}
+
+footer{
+    width: 100%;
+    padding: 0% 0%;
+    background-size: cover;
+    background-color:#ACEF35;
+    margin: 0% 0%;
+    
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    margin: 0 12%;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__footer .terms{
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 500;
+    color: #5a5454;
+    font-size: 90%;
+}
+
+.container__footer .terms p{
+    margin: 0% 0%;
+    padding: 0% 0%;
+}
+
+
+.box__footer {
+    margin-bottom: 0;
+    color: rgb(8, 58, 102);
+    font-weight: 100%;
+    text-align: center;
+    display: flex;
+    margin: 2% 7.5% 0 0;
+    padding: 0 0 0 0;
+}
+
+.box__footer a{
+    margin-top: 1%;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px;
+    color: rgb(111, 198, 3);
+}
+
+.box__copyright p{
+    margin-top: 20px;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+    
+}
+
+
+@media (min-width:701px){
+
+    .submenu-tematicas{
+        visibility: hidden;
+        opacity: 0;
+        transition:1.5s;
+    }
+
+    .submenu-asignaturas{
+        visibility: hidden;
+        opacity: 0;
+        transition:1.5s;
+    }
+
+}
+
+@media (max-width:2000px) {
+
+    .wave{
+        margin: 15% 0 0 0;
+        height: 210px;
+        width: 100%;
+    }
+
+
+    .submenu-tematicas li a:hover {
+        width: 100%;
+    }
+
+    .submenu-asignaturas li a:hover {
+        width: 100%;
+    }
+
+    .nav-main .menu li  {
+        padding: 0% 1.5%;
+    }
+    
+}
+
+@media (max-width:1600px){
+    .wave{
+        margin: 15.5% 0 0 0;
+        height: 180px;
+        width: 100%;
+    }
+    .menu li a:hover{
+        width: 100%;
+    }
+
+    .menu li a:hover{
+        width: 147%;
+    }
+
+    .submenu-tematicas {
+        position: absolute;
+        width: 34%;
+    }
+
+    .submenu-tematicas li a:hover {
+        width: 100%;
+    }
+
+    .submenu-asignaturas {
+        position: absolute;
+        width: 35%;
+    }
+    
+    .submenu-asignaturas li a:hover {
+        width: 100%;
+    }
+
+    .nav-main .menu li  {
+        padding: 0% 1.8%;
+    }
+
+    footer{
+        width: 100%;
+        padding: 20px 0px;
+        background-size: cover;
+        background-color:#ACEF35;
+        
+        /*background-color: #d0f0f8;
+        -webkit-mask-image: url("../Images/background-footer.svg");
+        mask-image: url("../Images/background-footer.svg");
+        -webkit-mask-size: cover;
+        mask-size: cover;*/
+    }
+    
+    .container__footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .box__footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0.2% 0% 2% 0;
+        font-size: 62%;
+    }
+    
+    .box__footer .terms{
+        max-width: 100%;
+        margin-top: 2%;
+        font-weight: 500;
+        color: #5a5454;
+        font-size: 140%;
+    }
+    
+    .box__footer {
+        margin-bottom: 5px;
+        color: rgb(8, 58, 102);
+        font-weight: 100%;
+        text-align: center;
+        display: flex;
+        margin: 0 0 0 0;
+    
+    }
+    
+    .box__footer a{
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .box__footer a:hover{
+        opacity: 0.8;
+    }
+    
+    .box__footer a .fab{
+        font-size: 20px;
+    }
+    
+    .box__copyright{
+        max-width: 95%;
+        margin: auto;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    
+    .box__copyright p{
+        margin-top: 20px;
+    }
+    
+    .box__copyright hr{
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a;
+        
+    }
+}
+
+@media (max-width:1500px) {
+    
+    .wave{
+        margin: 13.5% 0 0 0;
+        height: 160px;
+        width: 100%;
+    }
+
+    .menu li a:hover{
+        width: 147%;
+    }
+
+    .submenu-tematicas li a:hover {
+        width: 100%;
+    }
+
+    .submenu-asignaturas li a:hover {
+        width: 100%;
+    }
+
+    .nav-main .menu li  {
+        padding: 0% 1.8%;
+    }
+
+}
+
+@media (max-width:1300px) {
+    
+    .wave{
+        margin: 13.5% 0 0 0;
+        height: 140px;
+        width: 100%;
+    }
+
+    .menu li a:hover{
+        width: 147%;
+    }
+
+    .submenu-tematicas li a:hover {
+        width: 100%;
+    }
+
+    .submenu-asignaturas li a:hover {
+        width: 100%;
+    }
+
+    .nav-main .menu li  {
+        padding: 0% 2%;
+    }
+}
+
+@media (max-width:1200px) {
+    
+    .wave{
+        margin: 13.5% 0 0 0;
+        height: 130px;
+        width: 100%;
+    }
+    .menu li a:hover{
+        width: 147%;
+    }
+
+    .submenu-tematicas li a:hover {
+        width: 100%;
+    }
+
+    .submenu-asignaturas li a:hover {
+        width: 100%;
+    }
+
+    .nav-main .menu li  {
+        padding: 0% 2%;
+    }
+}
+
+@media (max-width:700px ) {
+
+    .contenido-textos{
+        font-size: 90%;
+    }
+
+    .imagenes-de-contenido{
+        width: 35%;
+        
+    }
+    
+    .videos-contenido{
+        width: 80%;
+        height: 220px;
+    }
+
+    .wave{
+        margin: 12.5% 0 0 0;
+        height: 80px;
+        width: 100%;
+    }
+    
+    .nav-main ul.menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 20%;
+        padding: 5px ;
+        opacity: .9;
+        transform: translateX(-250px);
+        transition: transform .5s ease-in-out;
+        z-index: 5;
+    }
+
+    .nav-main ul.menu.show{
+        transform: translateX(0px);
+    }
+
+
+    .menu-btn{
+        display: block;
+    }
+
+    .menu {
+        list-style:none;
+        padding: 0;
+        width: 98%;
+        max-width: 96%;
+        margin:auto;
+        position: fixed;
+        text-align: left;
+        z-index: 2;
+        
+    } 
+    /*--Menu--*/
+
+    /*Color fondo menu*/
+
+
+    .menu li{
+        display:inline-block;
+        text-align: left;
+        width: 100%;
+        margin: 1%; 
+    }
+    
+    /* Color de letra del menu*/
+    
+    .menu  li a {
+        text-decoration: none;
+        padding: 15% 2%;
+        display: block;
+        font-size: 90%;
+    }
+
+    
+    /*Color de cuando pasa el mouse para el menu*/    
+    .menu li a:hover{
+        width: 100%;
+        
+    }
+/*--Submenu--*/
+/*Color fondo tematicas*/
+    
+.submenu-tematicas {
+    position: relative;
+    width: 30%;
+    
+  
+}
+
+.submenu-tematicas li {
+    padding: 0% 0%;
+    margin: 1% 0%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+/* Color de letra de las tematicas*/
+
+.submenu-tematicas li a{
+    position: relative;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 80%;
+
+}
+
+/*Color de cuando pasa el mouse para las tematicas*/ 
+
+.submenu-tematicas li a:hover{
+    width: 100%;
+}
+
+
+.menu li .submenu-tematicas{
+    position: relative;
+    display:inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+
+    /*Color fondo asignaturas*/
+    
+    .submenu-asignaturas {
+        position: relative;
+        width: 30%;
+        
+      
+    }
+    
+    .submenu-asignaturas li {
+        padding: 0% 0%;
+        margin: 1% 0%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    /* Color de letra de las asignaturas*/
+    
+    .submenu-asignaturas li a{
+        position: relative;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 85%;
+    }
+    
+    /*Color de cuando pasa el mouse para las asignaturas*/ 
+    
+    .submenu-asignaturas li a:hover{
+        width: 100%;
+    }
+    
+    
+    .menu li .submenu-asignaturas{
+        position: relative;
+        display:inline-block;
+        text-align: left;
+        width: 100%;
+    }
+
+
+    }
+    @media (max-width:400px ) {
+
+        .contenido-textos{
+            font-size: 70%;
+        }
+    
+        .imagenes-de-contenido{
+            width: 30%;
+            
+        }
+        
+        .videos-contenido{
+            width: 90%;
+            height: 130px;
+        }
+        .wave{
+            margin: 9.5% 0 0 0;
+            height: 40px;
+            width: 100%;
+        }
+
+        .nav-main ul.menu{
+            width: 35%;
+            height: 78.5%;
+        }
+
+        .menu-btn{
+            top: 0.2%;
+            font-size: 0.6rem;
+        }
+    }
